@@ -1,0 +1,43 @@
+module.exports = {
+	env: {
+		browser: true,
+		commonjs: true,
+		es6: true,
+	},
+	extends: 'airbnb',
+	parser: 'babel-eslint',
+	parserOptions: {
+		ecmaFeatures: {
+			experimentalObjectRestSpread: true,
+			jsx: true,
+		},
+		sourceType: 'module',
+		ecmaVersion: 7,
+	},
+	plugins: ['react'],
+	rules: {
+		'no-plusplus': 'off',
+		'jsx-a11y/anchor-is-valid': 'off',
+		'react/destructuring-assignment': 'off',
+		'react/no-array-index-key': 'off',
+		'no-mixed-spaces-and-tabs': 'off',
+		'react/button-has-type': 'off',
+		'no-param-reassign': 'off',
+		'import/no-mutable-exports': 'off',
+		'no-tabs': 'off',
+		'global-require': 'off',
+		'no-multi-assign': 'off',
+		'react/react-in-jsx-scope': 'off',
+		'react/prop-types': 0,
+		'jsx-a11y/role-supports-aria-props': 'off',
+		'jsx-a11y/click-events-have-key-events': 'off',
+		'jsx-a11y/no-static-element-interactions': 'off',
+		'react/jsx-filename-extension': 'off',
+		'react/prefer-stateless-function': 'off',
+		'jsx-a11y/media-has-caption': 'off',
+		'no-underscore-dangle': 'off',
+	},
+	settings: {
+		'import/ignore': ['node_modules'],
+	},
+};
